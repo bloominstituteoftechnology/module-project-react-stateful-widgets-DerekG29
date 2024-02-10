@@ -18,10 +18,8 @@ import React, { useState } from 'react';
 const listOfSquareIds = ['sqA', 'sqB', 'sqC', 'sqD'];
 
 export default function Squares() {
-  const [squares, setSquares] = useState(listOfSquareIds);
+  const [squares] = useState(listOfSquareIds);
   const [activeSquare, setActiveSquare] = useState(null);
-
-  console.log(squares)
 
   const getClassName = id => {
     return id === activeSquare ? 'active' : '';
